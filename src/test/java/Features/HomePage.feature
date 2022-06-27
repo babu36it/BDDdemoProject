@@ -10,7 +10,7 @@ Feature: This feature file talks about the Home page related scenarios
   Scenario: Login to the application with valid username and valid password
     Given Launch the application
     When User clicks on SignIn
-#    And Enters valid username and password
+    And Enter valid username
 #    Then User has to be taken to the home page
 #
 #  @smokeSuite
