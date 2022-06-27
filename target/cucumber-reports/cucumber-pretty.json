@@ -1,0 +1,53 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-16T03:59:33.001Z",
+        "line": 10,
+        "name": "Login to the application with valid username and valid password",
+        "description": "",
+        "id": "this-feature-file-talks-about-the-home-page-related-scenarios;login-to-the-application-with-valid-username-and-valid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7414000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Launch the application",
+            "match": {
+              "location": "StepDefinition.HomePageStepDefinition.launchApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2488000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on SignIn",
+            "match": {
+              "location": "StepDefinition.HomePageStepDefinition.userClicksOnSignIn()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functionalSuite"
+          }
+        ]
+      }
+    ],
+    "name": "This feature file talks about the Home page related scenarios",
+    "description": "",
+    "id": "this-feature-file-talks-about-the-home-page-related-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/HomePage.feature",
+    "tags": []
+  }
+]
