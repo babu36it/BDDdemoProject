@@ -29,11 +29,6 @@ b)	FindBy() – all the locator of elements ( name,xPath , Id ,css,linkText., pa
 c)	FindAll() – multiple locator of the element ( if any one locator is matched – it locates the element ) . OR 
 d)	FindBys () -multiple locator of the elements ( only if both should match than it locates the element)  AND
 
-
-
-
-
-
 13)	RunnerClass – Package ( Never code any thing in this class ) 
 a)	@RunWith(Cucumber.class) 
 @CucumberOptions) {
@@ -53,3 +48,26 @@ d)	plugin  - produce reports that contain information about what scenarios have 
 e)	
 14)	Utilities -Package 
 a)	BaseClass – driver initialization 
+
+----------------------------------------------------------------------------------------------
+Day - 7: June 27 - 2022
+---------------------------------------------------------------------------------------------
+1) Reading the testData from the properties files and sending the data to the testbox 
+
+----------------------------------------------------------------------------------------------
+Day - 8:June 28 - 2022
+---------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------
+Day - 9:June 29 - 2022
+---------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
+Day - 10:June 30 - 2022
+---------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
+Day - 11:July 01 - 2022
+---------------------------------------------------------------------------------------------
+
