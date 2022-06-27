@@ -15,11 +15,11 @@ public class HomePageObject {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(xpath = "")
-    protected WebElement userName;
+    @FindBy(id = "ap_email")
+    public WebElement userName;
 
     @FindBy(id = "")
-    protected WebElement password;
+    public WebElement password;
 
 //    At least one of the locator has to match
     @FindBy(xpath = "//header[@id=\"navbar-main\"]/div/div/div[3]/div/a[2]/div")
@@ -28,6 +28,6 @@ public class HomePageObject {
 //    All the locator should match with the element identifier
     @FindBys({@FindBy(xpath = ""),
     @FindBy(id="")})
-    protected WebElement login;
+    public WebElement login;
 
 }
