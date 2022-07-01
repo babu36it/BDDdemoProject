@@ -6,6 +6,7 @@ import Utilities.BaseClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class HomePageStepDefinition extends BaseClass {
     HomePage homePage;
@@ -28,11 +29,16 @@ public class HomePageStepDefinition extends BaseClass {
 
         homePage= new HomePage();
         homePage.enterValuesInUserName(testData().get("userName"));
-        System.out.println(testData().get("password"));
+        homePage.clickOnContinueButton();
+        Assert.assertTrue("Password text box is not displayed/present",homePage.verifyPasswordTextBoxIsDisplayed());
+    }
 
-        System.out.println(testData().get("value"));
-
-
+    @And("^Enter valid password$")
+    public void enterValidPassword(){
+        homePage= new HomePage();
+        homePage.enterPasswordText(testData().get("password"));
+        homePage.clickOnSignInButtonInLogin();
+        Assert.assertTrue("",homePage.verifyUserHasLoggedIn());
     }
 
 }
