@@ -1,16 +1,20 @@
 package PageClasses;
 
 import PageObjects.HomePageObject;
+import Utilities.WebReusability;
+import io.cucumber.java.an.E;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
 import static Utilities.BaseClass.driver;
 import static Utilities.BaseClass.initiateDriver;
 
-public class HomePage {
+public class HomePage extends WebReusability {
 
     HomePageObject homePageObject = new HomePageObject(driver);
 
@@ -47,6 +51,52 @@ public class HomePage {
 
         }
         return "Suresh";
+    }
+
+    public void clickOnContinueButton() {
+        try {
+            homePageObject.continueButton.click();
+        }catch (Exception e){
+
+        }
+    }
+
+    public boolean verifyPasswordTextBoxIsDisplayed(){
+        try {
+//            Explicit wait
+            waitUntilElementVisible(homePageObject.password);
+            homePageObject.password.isDisplayed();
+            return true;
+        }catch (Exception e){
+
+        }
+        return false;
+    }
+
+    public void enterPasswordText(String text){
+        try {
+            homePageObject.password.sendKeys(text);
+        }catch (Exception e){
+
+        }
+    }
+
+    public void clickOnSignInButtonInLogin(){
+        try {
+            homePageObject.sigInButton.click();
+        }catch (Exception e){
+
+        }
+    }
+
+    public boolean verifyUserHasLoggedIn(){
+        try {
+            homePageObject.ValidationOfHomePage.isDisplayed();
+            return true;
+        }catch (Exception e){
+
+        }
+        return false;
     }
 
     public void listOfElements(){
