@@ -18,12 +18,21 @@ public class HomePageObject {
     @FindBy(id = "ap_email")
     public WebElement userName;
 
-    @FindBy(id = "")
+    @FindBy(id="continue")
+    public WebElement continueButton;
+
+    @FindBy(name = "password")
     public WebElement password;
 
 //    At least one of the locator has to match
     @FindBy(xpath = "//header[@id=\"navbar-main\"]/div/div/div[3]/div/a[2]/div")
     public WebElement signIn;
+
+    @FindBy(id = "signInSubmit")
+    public WebElement sigInButton;
+
+    @FindBy(id = "nav-link-accountList-nav-line-1")
+    public WebElement ValidationOfHomePage;
 
 //    All the locator should match with the element identifier
     @FindBys({@FindBy(xpath = ""),
