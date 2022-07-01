@@ -11,6 +11,7 @@ Feature: This feature file talks about the Home page related scenarios
     Given Launch the application
     When User clicks on SignIn
     And Enter valid username
+  And  Enter valid password
 #    Then User has to be taken to the home page
 #
 #  @smokeSuite
